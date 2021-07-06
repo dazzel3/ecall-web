@@ -15,7 +15,9 @@ body, html {
     background-image: url('./assets/map.jpg');
     background-repeat: no-repeat;
     min-width: 100vw;
+    width: 100%;
     min-height: 100vh;
+    height: 100%;
 }
 
 .e_call {
@@ -27,55 +29,50 @@ body, html {
 }
 
 .e_call img {
-    width: 3.8vw;
+    width: 10vw;
     height: auto;
 }
 
 .info_box {
-    width: 23vw;
-    height: 20vh;
+    min-width: 35vw;
+    min-height: 17vh;
     box-shadow: 0.25vh 0.25vh 2px 1px rgba(0, 0, 0, 0.2);
     background-color: white;
     border-radius: 15px;
     position: fixed;
-    bottom: 8vh;
-    right: 10vh;
+    bottom: 6vh;
+    right: 7vh;
     font-family: 'InfinitySans-RegularA1';
 }
 
 .street {
     font-weight: 600;
-    font-size: 2.5vh;
+    font-size: 1.9vh;
     color: #282828;
-    position: fixed;
-    top: 74vh;
-    left: 155vh;
+    margin-top: 1.6vh;
+    margin-left: 2.4vh;
 }
 
 .address {
-    font-size: 2.2vh;
+    font-size: 1.6vh;
     color: #282828;
-    position: fixed;
-    top: 77.5vh;
-    left: 155vh;
+    margin-left: 2.4vh;
 }
 
 .phone_num {
     font-weight: 600;
-    font-size: 2.3vh;
+    font-size: 1.7vh;
     color: #909090;
-    position: fixed;
-    top: 81.3vh;
-    left: 155vh;
+    margin-top: 0.3vh;
+    margin-left: 2.4vh;
 }
 
 .location {
     font-weight: 600;
-    font-size: 2.5vh;
+    font-size: 1.9vh;
     color: #E6202C;
-    position: fixed;
-    top: 86.8vh;
-    left: 162.5vh;
+    text-align: center;
+    margin-top: 3.3vh;
 }
 
 .e_call_img {
@@ -84,10 +81,98 @@ body, html {
 }
 
 .e_call_img img {
-    width: 1.6vw;
+    width: 2.6vw;
     height: auto;
     position: fixed;
-    bottom: 22.5vh;
-    right: 12.7vh;
+    bottom: 19.2vh;
+    right: 9.2vh;
     opacity: .5;
+}
+
+@media all and (min-width:769px){
+
+    body, html { 
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    
+    .map {
+        background-image: url('./assets/map.jpg');
+        background-repeat: no-repeat;
+        min-width: 100vw;
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+    }
+    
+    .e_call {
+        width: fit-content;
+        height: fit-content;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+    }
+    
+    .e_call img {
+        width: 3.8vw;
+        height: auto;
+    }
+    
+    .info_box {
+        min-width: 23vw;
+        min-height: 20vh;
+        box-shadow: 0.25vh 0.25vh 2px 1px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border-radius: 15px;
+        position: fixed;
+        bottom: 8vh;
+        right: 10vh;
+        font-family: 'InfinitySans-RegularA1';
+    }
+    
+    .street {
+        font-weight: 600;
+        font-size: 2.5vh;
+        color: #282828;
+        margin-top: 1.9vh;
+        margin-left: 3vh;
+    }
+    
+    .address {
+        font-size: 2.2vh;
+        color: #282828;
+        margin-top: 0.2vh;
+        margin-left: 3vh;
+    }
+    
+    .phone_num {
+        font-weight: 600;
+        font-size: 2.3vh;
+        color: #909090;
+        margin-top: 0.4vh;
+        margin-left: 3vh;
+    }
+    
+    .location {
+        font-weight: 600;
+        font-size: 2.5vh;
+        color: #E6202C;
+        text-align: center;
+        margin-top: 2.9vh;
+    }
+    
+    .e_call_img {
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .e_call_img img {
+        width: 1.6vw;
+        height: auto;
+        position: fixed;
+        bottom: 22.5vh;
+        right: 12.7vh;
+        opacity: .5;
+    }
 }
