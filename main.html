@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css?after">
     <title>E-Call</title>
 </head>
 <body>
-    <div class="map">
-        <div class="e_call">
-            <img src="assets/ecall.png" alt="user_location"/>
-        </div>
+    <div class="map_container">
+        <div id="map"></div>
         <div class="info_box">
             <div class="street">퇴계로41길</div>
             <div class="address">서울특별시 중구 광희동</div>
             <div class="phone_num">010-3827-2910</div>
-            <div class="location">37.562585, 126.995899</div>
-        </div>
-        <div class="e_call_img">
-            <img src="assets/ecall.png" alt="user_location_info"/>
+            <div class="location">37.564032, 126.834188</div>
         </div>
     </div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9202dbc66a36efd437442c88a7baa3bc"></script>
+    <script type="text/javascript" src="map.js?ver=1.04"></script>
 </body>
 </html>
